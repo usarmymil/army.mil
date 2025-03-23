@@ -490,3 +490,55 @@ h1, h2, h3, p {
         height: auto;
     }
 }
+/* Ensure the website takes full width of any device */
+body, html {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden; /* Prevents side-scrolling */
+}
+
+/* Make sure the container fills the screen */
+.container {
+    width: 100%; /* Fills the screen width */
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Fix text size */
+h1, h2, h3, p {
+    font-size: 20px; /* Make text readable */
+    text-align: center;
+}
+
+/* Fix input fields and buttons */
+input, select, textarea {
+    width: 100%; /* Ensure forms take full width */
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Ensure images don't shrink too much */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2, h3, p {
+        font-size: 18px;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+    }
+}
