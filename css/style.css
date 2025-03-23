@@ -450,3 +450,43 @@ h1, h2, h3, p {
         height: auto;
     }
 }
+/* Ensure the website takes the full width of the screen */
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent side scrolling */
+}
+
+/* Adjust container width for better mobile view */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Make text and forms fit properly */
+h1, h2, h3, p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Fix navigation and buttons for mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* Make sure content fills the screen */
+        padding: 10px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        font-size: 18px; /* Improve readability */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
