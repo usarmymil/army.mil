@@ -383,3 +383,70 @@ img {
     object-fit: cover; /* Crop and fill the box */
     border-radius: 5px; /* Optional: Rounded corners */
 }
+/* Ensure the website scales properly on all screens */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Make sure the body and container fit within the screen */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Adjust container width for mobile */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Make text, headers, and form elements fit well on mobile */
+h1, h2, h3, p {
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust form layout for small screens */
+    input, select, textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Fix navigation menu for mobile */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Make the form and images responsive */
+    form {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
