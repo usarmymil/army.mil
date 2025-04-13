@@ -1,0 +1,411 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark blue military style */
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow; /* Highlight effect */
+}
+/* Fiancé Form Styling */
+.fiance-form {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    width: 80%;
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+input[type="submit"] {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background: yellow;
+    color: black;
+}
+.passport-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.passport-placeholder {
+    width: 120px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #f8f8f8;
+}
+.passport-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.passport-placeholder {
+    width: 150px;
+    height: 180px;
+    border: 2px dashed #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    position: relative;
+    cursor: pointer;
+}
+
+.passport-placeholder input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hide default file input */
+    cursor: pointer;
+}
+
+.passport-placeholder::after {
+    content: "Click to Upload";
+    font-size: 14px;
+    color: #003366;
+}
+.passport-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-fields {
+    width: 70%; /* Makes form fields take more space */
+}
+
+.passport-box {
+    width: 30%;
+    text-align: center;
+}
+
+.passport-placeholder {
+    width: 150px;
+    height: 180px;
+    border: 2px dashed #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    position: relative;
+    cursor: pointer;
+}
+
+.passport-placeholder input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.passport-placeholder::after {
+    content: "Click to Upload";
+    font-size: 14px;
+    color: #003366;
+}
+.rules-container {
+    background: #f8f8f8;
+    padding: 20px;
+    border-left: 5px solid #003366;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.rules-container p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rules-list {
+    padding-left: 30px;
+    list-style-type: disc; /* Ensures bullet points are properly formatted */
+}
+
+.rules-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+input[type="text"], input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#prefix, #first-name, #middle-initial, #last-name {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Default navigation (visible on large screens) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Menu toggle button (hidden by default) */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile Menu (for small screens) */
+@media screen and (max-width: 768px) {
+    .menu-toggle {.header-text {
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Star Styling */
+    .star {
+        font-size: 80px; /* Make the star bigger */
+        color: rgba(255, 255, 255, 0.2); /* Light faded white */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* Moves the star behind the text */
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .logo-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    /* Adjust text size on small screens */
+    @media screen and (max-width: 768px) {
+        .logo-text {
+            font-size: 16px; /* Make text smaller on mobile */
+        }
+    }
+    
+        display: block; /* Show the ☰ menu button */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Ensure image fits inside the frame */
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Crop the image to fit the box */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+/* Set fixed size for preview box */
+#fiance-preview, #officer-preview {
+    width: 120px; /* Adjust as needed */
+    height: 120px;
+    border: 2px solid #ccc; /* Optional: Adds a border */
+    display: none;
+}
+/* Image preview container */
+#fiance-preview, #officer-preview {
+    width: 120px;  /* Set fixed width */
+    height: 120px; /* Set fixed height */
+    border: 2px solid #ccc; /* Optional: Adds a border */
+    display: none; /* Initially hidden */
+    object-fit: cover; /* Ensure image fills the box */
+    overflow: hidden; /* Hide overflowing parts */
+}
+
+/* Force image to fit inside the preview box */
+#fiance-preview img, #officer-preview img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Crop and fill the box */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 360px;
+    }
+    .form-container {
+        min-width: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .fiance-form {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+        width: 100% !important;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
